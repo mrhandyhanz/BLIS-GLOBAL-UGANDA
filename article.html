@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article Title - ICRPlus</title>
+    <title>About ICRPlus - Integrated Coding & Robotics</title>
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
@@ -19,149 +19,196 @@
             background-color: #0F172A;
         }
 
-        .prose p {
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-            color: #475569;
+        .text-navy {
+            color: #0F172A;
         }
 
-        .prose h2 {
-            font-size: 1.875rem;
-            font-weight: 800;
-            color: #1E3A8A;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
+        .accent-gradient {
+            background: linear-gradient(135deg, #3B82F6 0%, #2DD4BF 100%);
         }
     </style>
 </head>
 
 <body class="bg-white">
 
+    <!-- fixed the logo with ICRP plus -->
     <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 px-10 py-6">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <img src="Assets/Logos/BLIS.png" alt="BLIS Global Uganda" class="h-10">
+                <img src="Assets/Logos/BLIS GLOBAL uganda.png" alt="BLIS Global Uganda" class="h-10">
             </div>
+
             <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-500">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="program-details.html">Program Details</a>
-                <a href="gallery.html" class="text-blue-600">News</a>
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="program-details.html" class="hover:text-blue-600">Program Details</a>
+                <a href="gallery.html" class="hover:text-blue-600">News</a>
             </div>
-            <button class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold text-sm">Partner with us</button>
+
+            <!-- Modified the partner with us button to a link -->
+            <div class="flex items-center gap-4">
+                <a href="partner.html"
+                    class="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-full font-bold text-sm">Partner
+                    with us</a>
+
+                <button id="menu-btn" class="md:hidden text-slate-600">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 p-6 space-y-4 shadow-xl">
+            <a href="index.html" class="block font-bold text-slate-700">Home</a>
+            <a href="about.html" class="block font-bold text-slate-700">About</a>
+            <a href="program-details.html" class="block font-bold text-slate-700">Program Details</a>
+            <a href="gallery.html" class="block font-bold text-slate-700">News</a>
+            <button class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold">Partner with us</button>
         </div>
     </nav>
 
-    <header class="pt-16 pb-12 px-8 max-w-4xl mx-auto">
-        <div class="flex items-center gap-3 mb-6">
-            <span
-                class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Innovation</span>
-            <span class="text-slate-400 text-xs font-medium">January 7, 2026 • 5 min read</span>
+    <header class="bg-navy py-24 text-center relative overflow-hidden">
+        <div
+            class="absolute inset-0 opacity-10 bg-[url('Assets/Images/3d%20rendering%20of%20Uganda%20flag.jpeg')] bg-cover bg-center">
         </div>
-        <h1 class="text-4xl md:text-5xl font-extrabold text-blue-900 leading-tight mb-8">Preparing Ugandan Students for
-            the AI Revolution</h1>
-
-        <div class="flex items-center gap-4 border-y border-slate-100 py-6">
-            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">BG
-            </div>
-            <div>
-                <p class="text-sm font-bold text-blue-900">Blis Global Editorial</p>
-                <p class="text-xs text-slate-500">Curriculum Design Team</p>
-            </div>
-            <div class="ml-auto flex gap-2">
-                <button
-                    class="p-2 border border-slate-200 rounded-full text-slate-400 hover:text-blue-600 transition"><i
-                        data-lucide="share-2" class="w-4 h-4"></i></button>
-                <button
-                    class="p-2 border border-slate-200 rounded-full text-slate-400 hover:text-blue-600 transition"><i
-                        data-lucide="bookmark" class="w-4 h-4"></i></button>
-            </div>
+        <div class="relative z-10">
+            <h1 class="text-white text-5xl md:text-6xl font-black mb-4">About ICRPlus</h1>
+            <p class="text-blue-300 tracking-widest uppercase text-xs font-bold">Bridging the Digital Divide in Uganda
+            </p>
         </div>
     </header>
 
-    <div class="max-w-6xl mx-auto px-8 mb-16">
-        <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&q=80"
-            class="w-full h-[500px] object-cover rounded-[2.5rem] shadow-2xl shadow-blue-900/10" alt="Featured Image">
-    </div>
-
-    <article class="max-w-3xl mx-auto px-8 mb-24 prose">
-        <p class="text-xl text-slate-600 font-medium leading-relaxed italic mb-10">
-            As artificial intelligence continues to reshape global industries, the question for Ugandan educators is no
-            longer 'if' we should teach it, but 'how' we can bridge the gap today.
-        </p>
-
-        <p>
-            Traditional ICT education has focused on consumption—using word processors, spreadsheets, and browsing the
-            internet. However, the world of 2026 demands creators. At ICRPlus, we believe that understanding the logic
-            behind AI starts with the physical world: Robotics.
-        </p>
-
-        <h2>Breaking the Code Barrier</h2>
-        <p>
-            When students build a robot that avoids obstacles, they aren't just playing with toys. They are learning the
-            fundamentals of sensors, data processing, and decision-making algorithms. This hands-on experience
-            demystifies the "black box" of artificial intelligence.
-        </p>
-
-        <blockquote class="border-l-4 border-blue-600 pl-6 my-10">
-            <p class="text-2xl font-bold text-blue-900 tracking-tight leading-snug">
-                "Our goal is to ensure that a student in Kampala has the same technical fluency as a student in Silicon
-                Valley."
-            </p>
-        </blockquote>
-
-        <h2>A Seamless Curriculum</h2>
-        <p>
-            The ICRPlus journey transitions from visual block-based coding (Level 01) to professional-grade Python
-            engineering (Level 03). By the time our students reach the advanced levels, they are not just writing code;
-            they are designing systems that solve local problems.
-        </p>
-    </article>
-
-    <section class="bg-slate-50 py-24 border-t border-slate-100">
-        <div class="max-w-7xl mx-auto px-8">
-            <h3 class="text-2xl font-extrabold text-blue-900 mb-12">More from ICRPlus News</h3>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div
-                    class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-lg transition group cursor-pointer">
-                    <div class="h-40 rounded-2xl overflow-hidden mb-4">
-                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
-                            class="w-full h-full object-cover group-hover:scale-105 transition">
-                    </div>
-                    <h4 class="font-bold text-blue-900 group-hover:text-blue-600 transition">5 Ways Robotics Builds
-                        Critical Thinking Skills</h4>
+    <section class="py-24 max-w-7xl mx-auto px-8">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="absolute -bottom-6 -right-6 w-full h-full border-4 border-blue-100 rounded-[2.5rem] z-0">
                 </div>
-                <div
-                    class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-lg transition group cursor-pointer">
-                    <div class="h-40 rounded-2xl overflow-hidden mb-4">
-                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80"
-                            class="w-full h-full object-cover group-hover:scale-105 transition">
+                <img src="Assets/Images/Robo.jpg"
+                    class="relative z-10 rounded-[2.5rem] shadow-2xl w-full h-full object-cover"
+                    alt="Students learning">
+            </div>
+            <div>
+                <h2 class="text-4xl font-extrabold text-blue-900 mb-6 leading-tight">What is ICRPlus?</h2>
+                <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                    ICRPlus is an <span class="text-blue-600 font-semibold">Integrated Coding and Robotics
+                        Program</span> designed to empower students with the technical, creative, and analytical skills
+                    required in the 21st-century global economy.
+                </p>
+                <p class="text-slate-600 leading-relaxed mb-8">
+                    We believe that education should move beyond the textbook. Our program integrates hardware
+                    engineering (Robotics) with software logic (Coding) to create a holistic learning environment where
+                    students don't just consume technology—they build it.
+                </p>
+
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="p-4 bg-blue-50 rounded-2xl">
+                        <h4 class="font-bold text-blue-900 mb-2 flex items-center gap-2">
+                            <i data-lucide="target" class="w-4 h-4 text-blue-600"></i> Our Mission
+                        </h4>
+                        <p class="text-xs text-slate-500">To provide world-class STEAM education to every school in
+                            Uganda.</p>
                     </div>
-                    <h4 class="font-bold text-blue-900 group-hover:text-blue-600 transition">Ugandan Students build
-                        AI-powered farm robot</h4>
-                </div>
-                <div
-                    class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-lg transition group cursor-pointer text-center flex flex-col justify-center">
-                    <i data-lucide="arrow-right-circle" class="w-10 h-10 text-blue-600 mx-auto mb-2"></i>
-                    <p class="font-bold text-blue-900">View All Articles</p>
+                    <div class="p-4 bg-purple-50 rounded-2xl">
+                        <h4 class="font-bold text-purple-900 mb-2 flex items-center gap-2">
+                            <i data-lucide="eye" class="w-4 h-4 text-purple-600"></i> Our Vision
+                        </h4>
+                        <p class="text-xs text-slate-500">A future where Ugandan youth lead the global digital
+                            innovation space.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-blue-600 text-white text-center">
-        <div class="max-w-2xl mx-auto px-8">
-            <h2 class="text-3xl font-extrabold mb-4">Stay in the Loop</h2>
-            <p class="text-blue-100 mb-8">Subscribe to our monthly newsletter for program updates and tech news.</p>
-            <div class="flex flex-col sm:flex-row gap-3">
-                <input type="email" placeholder="Enter your email"
-                    class="flex-1 px-6 py-4 rounded-xl text-slate-900 outline-none">
-                <button class="bg-navy px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition">Subscribe</button>
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-blue-900 mb-4">The Pillars of Our Program</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto mb-16">Our methodology is built on four core foundations that
+                ensure a balanced and future-ready educational experience.</p>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div
+                        class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition">
+                        <i data-lucide="code" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-blue-900 mb-3">Software Logic</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Mastering languages like Scratch, Python, and C++
+                        to control the digital world.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div
+                        class="w-14 h-14 bg-emerald-500 text-white rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition">
+                        <i data-lucide="cog" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-blue-900 mb-3">Hardware Eng.</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Designing, building, and wiring physical robots
+                        and electronic systems.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div
+                        class="w-14 h-14 bg-amber-500 text-white rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition">
+                        <i data-lucide="brain-circuit" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-blue-900 mb-3">Critical Thinking</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Learning to break down complex problems into
+                        manageable, logical steps.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                    <div
+                        class="w-14 h-14 bg-purple-600 text-white rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition">
+                        <i data-lucide="lightbulb" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-blue-900 mb-3">Creative Design</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">Using technology as a canvas for innovation and
+                        creative expression.</p>
+                </div>
             </div>
         </div>
+    </section>
+
+    <section class="py-20 bg-navy text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-12 text-center relative z-10">
+            <div>
+                <span class="text-4xl md:text-5xl font-black text-blue-400 block mb-2">500+</span>
+                <p class="text-xs uppercase tracking-widest font-bold opacity-60">Students Impacted</p>
+            </div>
+            <div>
+                <span class="text-4xl md:text-5xl font-black text-blue-400 block mb-2">15+</span>
+                <p class="text-xs uppercase tracking-widest font-bold opacity-60">Partner Schools</p>
+            </div>
+            <div>
+                <span class="text-4xl md:text-5xl font-black text-blue-400 block mb-2">50+</span>
+                <p class="text-xs uppercase tracking-widest font-bold opacity-60">Projects Built</p>
+            </div>
+            <div>
+                <span class="text-4xl md:text-5xl font-black text-blue-400 block mb-2">100%</span>
+                <p class="text-xs uppercase tracking-widest font-bold opacity-60">Hands-on Learning</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 text-center">
+        <h2 class="text-3xl font-extrabold text-blue-900 mb-6">Our team is ready to transform your school.</h2>
+        <button
+            class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold shadow-lg shadow-blue-200 hover:bg-blue-700 transition-all">Download
+            Program Brochure</button>
     </section>
 
     <script>lucide.createIcons();</script>
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>
